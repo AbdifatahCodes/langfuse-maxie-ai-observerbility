@@ -135,7 +135,7 @@ services:
       --requirepass ${REDIS_AUTH:-myredissecret}
       --maxmemory-policy noeviction
     ports:
-      - 127.0.0.1:6380:6379  # Changed host port to 6380
+      - 127.0.0.1:6381:6379  # Changed host port to 6380
     volumes:
       - langfuse_redis_data:/data
     healthcheck:
